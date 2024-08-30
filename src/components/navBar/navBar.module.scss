@@ -1,0 +1,60 @@
+.nav {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px var(--mainColor) solid;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  @media screen and (max-width: 1000px) {
+    border: none;
+  }
+
+  .navLeft {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+
+      &.navLeft.opened {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        background: var(--white);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding-top: 20px;
+        justify-content: center;
+        gap: 20px;
+
+        a {
+          font-size: 2em;
+          border-bottom: 1px var(--mainColor) solid;
+        }
+      }
+    }
+  }
+  a:hover {
+    font-weight: bold;
+    color: var(--mainColor);
+  }
+}
+
+.hamburgerReact {
+  display: none;
+  @media screen and (max-width: 1000px) {
+    display: block;
+    position: fixed;
+    top: 0;
+    color: var(--mainColor);
+    z-index: 13;
+  }
+}

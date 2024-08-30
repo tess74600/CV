@@ -1,0 +1,23 @@
+.realisationsContainer {
+  padding-top: 20vh;
+  background-color: var(--white);
+
+  @media screen and (max-width: 1000px) {
+    padding-top: 5vh;
+  }
+
+  .imagesContainer {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  img {
+    border: var(--mainColor) thin solid;
+    object-fit: center/cover;
+    flex: 0 1 20%;
+  }
+}

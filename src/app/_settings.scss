@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color: #555;
+  font-family: "Roboto-400";
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-family: "Lufga-400";
+  padding: 30px 0;
+  border-top: 1px var(--mainColor) solid;
+  width: 70%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.2em;
+  }
+}

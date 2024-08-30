@@ -1,0 +1,17 @@
+.accueilContainer {
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+  background: var(--white);
+}
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--mainColor);
+  transform-origin: 0%;
+  z-index: 12;
+}

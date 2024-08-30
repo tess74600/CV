@@ -1,0 +1,17 @@
+.globalContainer {
+  padding-top: 20vh;
+
+  @media screen and (max-width: 1000px) {
+    padding-top: 5vh;
+  }
+  .experiencesContainer {
+    width: 90%;
+    margin: 0 auto;
+
+    .cardsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.formationsContainer {
+  padding-top: 20vh;
+
+  @media screen and (max-width: 1000px) {
+    padding-top: 5vh;
+  }
+
+  .timeContent {
+    margin-bottom: 20px;
+  }
+}

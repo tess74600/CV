@@ -1,0 +1,23 @@
+//ROBOTO
+@font-face {
+  font-family: "Roboto-400";
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+//LUFGA
+@font-face {
+  font-family: "Lufga-400";
+  src: url(./fonts/LufgaRegular.ttf);
+}
+
+:root {
+  --mainColor: rgb(3, 129, 3);
+  --white: rgb(248, 240, 240);
+  --black: rgb(15, 14, 14);
+}
+
+//BORDER-RADIUS
+:root {
+  --bdRadius-md: 20px;
+  --bdRadius-2xl: 150%;
+}

@@ -1,0 +1,53 @@
+.contactContainer {
+  padding-top: 20vh;
+
+  @media screen and (max-width) {
+    padding-top: 5vh;
+  }
+  .container {
+    padding: 20px;
+    background: rgba(0, 128, 0, 0.708);
+
+    .textContainer {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      .mail,
+      .tel,
+      .address {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        color: var(--white);
+        border-radius: var(--bdRadius-md);
+
+        @media screen and (max-width: 1000px) {
+          width: 90%;
+        }
+      }
+
+      .mail a,
+      .tel a,
+      .address {
+        color: var(--white);
+        font-size: 0.6em;
+
+        &:hover {
+          color: var(--black);
+        }
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    font-size: 0.5em;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
+  }
+}

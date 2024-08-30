@@ -1,0 +1,33 @@
+.presentationContainer {
+  padding-top: 20vh;
+
+  @media screen and (max-width: 1000px) {
+    padding-top: 5vh;
+  }
+  .textContainer {
+    width: 80%;
+    margin: 0 auto;
+    animation: showup 10s forwards;
+    padding-bottom: 20px;
+  }
+
+  @keyframes showup {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .CvContainer {
+    background: var(--mainColor);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--bdRadius-md);
+
+    a {
+      color: var(--white);
+    }
+  }
+}

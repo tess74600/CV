@@ -1,11 +1,11 @@
 .contactContainer {
-  padding-top: 20vh;
+  padding-top: 10vh;
   h2 {
     font-size: 1.8rem;
     padding: 30px 0 15px 0;
   }
 
-  @media screen and (max-width) {
+  @media screen and (max-width: 1000px) {
     padding-top: 5vh;
   }
   .container {
@@ -17,6 +17,9 @@
       gap: 20px;
       justify-content: space-between;
       align-items: center;
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+      }
       .mail,
       .tel,
       .address {

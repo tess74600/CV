@@ -11,9 +11,11 @@
   border-top: 1px var(--mainColor) solid;
   text-transform: uppercase;
   font-size: 0.5em;
-  background-color: white;
+  background: white;
   @media screen and (max-width: 1000px) {
     border: none;
+    background: none;
+    padding: 0;
   }
 
   .navLeft {
@@ -30,7 +32,7 @@
         flex-direction: column;
         position: fixed;
         top: 0;
-        background: var(--white);
+        background: white;
         width: 100%;
         height: 100%;
         align-items: center;

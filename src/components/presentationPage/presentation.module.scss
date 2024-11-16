@@ -1,14 +1,16 @@
 .presentationContainer {
-  padding-top: 20vh;
+  padding-top: 10vh;
 
   @media screen and (max-width: 1000px) {
-    padding-top: 5vh;
+    padding-top: 0;
   }
   .textContainer {
     width: 80%;
     margin: 0 auto;
     animation: showup 10s forwards;
+    animation-delay: 20s;
     padding-bottom: 20px;
+    font-size: 1.3rem;
   }
 
   @keyframes showup {

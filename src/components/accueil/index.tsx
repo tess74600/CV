@@ -22,9 +22,9 @@ const Accueil = () => {
 
       <Presentation />
       <LangagesContainer />
-      <Formations />
       <Experiences />
       <Realisations />
+      <Formations />
       <Contact />
     </div>
   );

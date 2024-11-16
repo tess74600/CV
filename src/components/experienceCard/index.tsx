@@ -1,6 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./experienceCard.module.scss";
-const ExperienceCard = ({ slide, index }: { slide: any; index: number }) => {
+import Link from "next/link";
+
+interface Slide {
+  title: string;
+  id: number;
+  text: string;
+  lien?: string;
+  liste: List[];
+}
+
+interface List {
+  id: number;
+  text: string;
+}
+const ExperienceCard = ({ slide, index }: { slide: Slide; index: number }) => {
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef<HTMLDivElement | null>(null);
 
@@ -40,11 +54,17 @@ const ExperienceCard = ({ slide, index }: { slide: any; index: number }) => {
       } ${index % 2 === 0 ? styles.fromLeft : styles.fromRight}`}
     >
       <h3 className={styles.date}>{slide.title}</h3>
-      <a className={styles.title}>{slide.text}</a>
+      {slide.lien ? (
+        <a className={styles.title} href={slide.lien} target="_blank">
+          {slide.text}
+        </a>
+      ) : (
+        <p className={styles.title}>{slide.text}</p>
+      )}
 
       {slide.liste && (
         <ul className={styles.liste}>
-          {slide.liste.map((item: any) => (
+          {slide.liste.map((item: List) => (
             <li key={item.id} className={styles.item}>
               {item.text}
             </li>

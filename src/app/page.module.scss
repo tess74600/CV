@@ -4,6 +4,7 @@
   padding-top: 10vh;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
   .pictureContainer {
     height: 400px;
     width: 400px;
@@ -18,8 +19,6 @@
 
   h1 {
     padding: 40px 0 20px 0;
-    &:hover {
-      color: var(--mainColor);
-    }
+    color: var(--mainColor);
   }
 }

@@ -3,12 +3,15 @@
   width: 100%;
   padding: 20px 0;
   z-index: 10;
-  position: fixed;
+  position: sticky;
+  top: 0;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px var(--mainColor) solid;
+  border-top: 1px var(--mainColor) solid;
   text-transform: uppercase;
   font-size: 0.5em;
+  background-color: white;
   @media screen and (max-width: 1000px) {
     border: none;
   }

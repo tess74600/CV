@@ -1,13 +1,15 @@
 .contactContainer {
   padding-top: 20vh;
+  h2 {
+    font-size: 1.8rem;
+    padding: 30px 0 15px 0;
+  }
 
   @media screen and (max-width) {
     padding-top: 5vh;
   }
   .container {
     padding: 20px;
-    background: rgba(0, 128, 0, 0.708);
-
     .textContainer {
       display: flex;
       width: 80%;
@@ -22,23 +24,33 @@
         justify-content: center;
         gap: 10px;
         align-items: center;
-        color: var(--white);
         border-radius: var(--bdRadius-md);
+        font-size: 0.6em;
+        transition: all 0.3s ease;
 
         @media screen and (max-width: 1000px) {
           width: 90%;
         }
       }
+      .mail span,
+      .tel span {
+        transition: opacity 0.1s ease;
+      }
 
       .mail a,
-      .tel a,
-      .address {
-        color: var(--white);
-        font-size: 0.6em;
+      .tel a {
+        transition: transform 0.3s ease;
+      }
 
-        &:hover {
-          color: var(--black);
-        }
+      .mail:hover a,
+      .tel:hover a {
+        transform: scale(1.1);
+        color: var(--mainColor);
+      }
+
+      .mail:hover span,
+      .tel:hover span {
+        opacity: 0;
       }
     }
   }

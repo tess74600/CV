@@ -6,7 +6,9 @@
 }
 
 body {
-  background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  // background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  background: var(--white);
+
   color: #555;
   font-family: "Roboto-400";
   min-height: 100vh;

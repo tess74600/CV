@@ -13,8 +13,7 @@ const Contact = () => {
         <div className={styles.textContainer}>
           <div className={styles.mail}>
             <span>
-              {" "}
-              <LaptopIcon />{" "}
+              <LaptopIcon />
             </span>
             <a href="mailto:theresebazin2016@gmail.com">
               theresebazin2016@gmail.com

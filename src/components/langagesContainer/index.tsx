@@ -3,18 +3,25 @@ import styles from "./langages.module.scss";
 
 //COMPONENTS
 import LangageIcon from "../langagesIcon";
+
 const LangagesContainer = () => {
+  const langages = [
+    "HTML",
+    "CSS3",
+    "JavaScript",
+    "SASS",
+    "TypeScript",
+    "REACT",
+    "Next",
+    "TailWind",
+    "GitHub",
+  ];
   return (
     <div className={styles.langageIconContainer}>
       <div className={styles.scrollingDiv}>
-        <LangageIcon title={"HTML"} />
-        <LangageIcon title={"CSS3"} />
-        <LangageIcon title={"JavaScript"} />
-        <LangageIcon title={"REACT"} />
-        <LangageIcon title={"SASS"} />
-        <LangageIcon title={"GitHub"} />
-        <LangageIcon title={"TypeScript"} />
-        <LangageIcon title={"Next"} />
+        {langages.map((langage, index) => (
+          <LangageIcon key={index} title={langage} />
+        ))}
       </div>
     </div>
   );
